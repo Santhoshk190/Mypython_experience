@@ -1,4 +1,4 @@
-#sarsarle
+#guessing a number
 import random 
 #random.seed(20) import 
 sys 
@@ -6,6 +6,7 @@ import random as random_number
 import sys def 
 roll_dice_and_compute_sum(ndice): return 
 sum([random_number.randint(1, 6) \ for i in range(ndice)]) 
+
 def computer_guess(ndice): 
 return random_number.randint(ndice, 6*ndice) defplayer_guess(ndice): 
 return input('Guess the sum 
@@ -16,6 +17,7 @@ guess_function): guess = guess_function(ndice)
 throw = roll_dice_and_compute_sum(ndice) if
 guess == throw: capital += guess else:capital -
 = 1 return capital, throw, guess 
+             
 def play(nrounds, ndice=2): 
 # start capital: 
 player_capital = computer_capital = nroundsfor 
